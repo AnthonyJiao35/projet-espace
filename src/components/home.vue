@@ -1,13 +1,6 @@
 <template>
   <v-card>
     <v-layout>
-      <v-navigation-drawer expand-on-hover rail class="bg-deep-purple">
-        <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-format-list-bulleted" title="Listes des Astres" value="myfiles"></v-list-item>
-          <v-list-item prepend-icon="mdi-white-balance-sunny" title="Système Solaire" value="shared"></v-list-item>
-          <v-list-item prepend-icon="mdi-star-face" title="Astres Favoris" value="starred"></v-list-item>
-        </v-list>
-      </v-navigation-drawer>
       <v-main style="height: 100vh" class="app">
         <div class="pa-2">
           <h2 >Venez decouvrir
@@ -66,16 +59,7 @@ h2 {
   margin-top: 100px;
 }
 
-.app {
-  background-image: url('../assets/space-background.jpg');
-  /* chemin vers l'image de fond */
-  background-size: cover;
-  /* ajuste la taille de l'image pour remplir le fond */
-  background-position: center center;
-  /* centre l'image horizontalement et verticalement */
-  background-repeat: no-repeat;
-  /* empêche l'image de se répéter */
-}
+
 
 .btn {
   margin-top: 100px;
