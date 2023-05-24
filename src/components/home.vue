@@ -18,7 +18,7 @@
           <v-col cols="12" sm="6" md="3">
             <v-hover>
               <template v-slot:default="{ hover }">
-                <v-btn block rounded="xl" size="x-large" color="deep-purple" :dark="hover">Commencer l'aventure</v-btn>
+                <v-btn block rounded="xl" size="x-large" color="deep-purple" href="/system" :dark="hover">Commencer l'aventure</v-btn>
               </template>
             </v-hover>
           </v-col>

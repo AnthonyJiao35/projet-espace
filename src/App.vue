@@ -5,7 +5,7 @@
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-home" title="Accueil" value="home" href="/"></v-list-item>
           <v-list-item prepend-icon="mdi-format-list-bulleted" title="Listes des Astres" href="/list"></v-list-item>
-          <v-list-item prepend-icon="mdi-white-balance-sunny" title="Système Solaire" value="shared"></v-list-item>
+          <v-list-item prepend-icon="mdi-white-balance-sunny" title="Système Solaire" href="/system"></v-list-item>
           <v-list-item prepend-icon="mdi-star-face" title="Astres Favoris" value="starred"></v-list-item>
         </v-list>
       </v-navigation-drawer>
