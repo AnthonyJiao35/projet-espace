@@ -16,6 +16,11 @@ const routes = [
     path: '/:name',
     name: 'astre',
     component: () => import(/* webpackChunkName: "about" */ '../views/AstreView.vue')
+  },
+  {
+    path: '/favorites',
+    name: 'favorites',
+    component: () => import(/* webpackChunkName: "about" */ '../views/FavoritesView.vue')
   }
 ]
 
