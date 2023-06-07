@@ -4,39 +4,43 @@
             <h2>Listes des Astres
             </h2>
         </div>
-        <v-card class="mx-auto" max-width="250">
-            <v-card-title style="text-align: center;">Nom de L'Astre</v-card-title>
-            <v-card-text>
-                <div>Type d'astre: </div>
-                <div>Nombre de satelite:</div>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn color="bg-deep-purple">
-                    Explorer
-                </v-btn>
-                <v-spacer></v-spacer>
-                <v-btn size="small" color="surface-variant" variant="text" icon="mdi-heart"></v-btn>
-            </v-card-actions>
-        </v-card>
+        <div class="card-list">
+            <CardAstre>
+                <template v-slot:nom> Soleil</template>
+                <template v-slot:type> Soleil</template>
+                <template v-slot:nombre> Soleil</template>
+            </CardAstre>
+            <CardAstre>
+                <template v-slot:nom> test</template>
+                <template v-slot:type> Soleil</template>
+                <template v-slot:nombre> Soleil</template>
+            </CardAstre>
+        </div>
     </v-main>
 </template>
   
 <script>
+import CardAstre from './card.vue';
+
 
 export default {
-    name: 'listAstre',
-
-    data: () => ({
-
-    }),
+    name: "listAstre",
+    data: () => ({}),
+    components: { CardAstre }
 }
+
+
 </script>
-  
+
+
 <style scoped>
-
-.pa-2{
-    margin-bottom: 150px;
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 5vh;
 }
-
 </style>
+
+  
   

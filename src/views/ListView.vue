@@ -1,18 +1,18 @@
 <template>
-  <list />
+  <listAstre />
 </template>
 
 <script>
 import { defineComponent } from 'vue';
 
 // Components
-import List from '../components/list.vue';
+import listAstre from '@/components/list.vue';
 
 export default defineComponent({
   name: 'ListView',
 
   components: {
-    List,
-  },
+    listAstre
+},
 });
 </script>
