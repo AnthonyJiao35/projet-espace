@@ -6,7 +6,7 @@
             <div>Nombre de satelite: <slot name="nombre"></slot></div>
         </v-card-text>
         <v-card-actions>
-            <v-btn color="bg-deep-purple">
+            <v-btn color="bg-deep-purple" :href="link">
                 Explorer
             </v-btn>
             <v-spacer></v-spacer>
@@ -21,8 +21,9 @@
 
 export default {
     name: "CardAstre",
-  data() {
-  },
+    props: {
+        link: String
+    }
 };
 
 

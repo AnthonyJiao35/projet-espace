@@ -5,12 +5,27 @@
             </h2>
         </div>
         <div class="card-list">
-            <CardAstre>
+            <CardAstre link ="">
                 <template v-slot:nom> Soleil</template>
                 <template v-slot:type> Soleil</template>
                 <template v-slot:nombre> Soleil</template>
             </CardAstre>
-            <CardAstre>
+            <CardAstre link ="">
+                <template v-slot:nom> test</template>
+                <template v-slot:type> Soleil</template>
+                <template v-slot:nombre> Soleil</template>
+            </CardAstre>
+            <CardAstre link ="">
+                <template v-slot:nom> test</template>
+                <template v-slot:type> Soleil</template>
+                <template v-slot:nombre> Soleil</template>
+            </CardAstre>
+            <CardAstre link ="">
+                <template v-slot:nom> test</template>
+                <template v-slot:type> Soleil</template>
+                <template v-slot:nombre> Soleil</template>
+            </CardAstre>
+            <CardAstre link="/maroute">
                 <template v-slot:nom> test</template>
                 <template v-slot:type> Soleil</template>
                 <template v-slot:nombre> Soleil</template>
