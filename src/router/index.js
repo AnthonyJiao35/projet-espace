@@ -8,19 +8,28 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/astres',
-    name: 'astres',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AstresView.vue')
+    path: '/about',
+    name: 'about',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/:name',
-    name: 'astre',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AstreView.vue')
+    path: '/list',
+    name: 'Liste',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/ListView.vue')
   },
   {
-    path: '/favorites',
-    name: 'favorites',
-    component: () => import(/* webpackChunkName: "about" */ '../views/FavoritesView.vue')
+    path: '/system',
+    name: 'systeme',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/SolarView.vue')
   }
 ]
 
