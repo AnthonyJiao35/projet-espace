@@ -28,6 +28,16 @@
   background-repeat: no-repeat;
 }
 
+.v-list-item-title {
+  text-decoration: none;
+  color: white;
+}
+
+.v-list-item__prepend > .v-icon {
+    color: white;
+}
+</style>
+
 nav {
   padding: 30px;
 }

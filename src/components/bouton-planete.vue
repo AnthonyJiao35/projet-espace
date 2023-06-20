@@ -1,5 +1,5 @@
 <template>
-        <v-btn color="primary" outlined>
+        <v-btn color="primary" outlined :href="link">
             <slot></slot>
         </v-btn>
 
@@ -10,9 +10,9 @@
 export default {
     name: 'boutonPlanete',
 
-    data: () => ({
-
-    }),
+    props: {
+        link: String
+    }
 }
 </script>
   

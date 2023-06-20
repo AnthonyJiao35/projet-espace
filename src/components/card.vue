@@ -3,7 +3,7 @@
         <v-card-title style="text-align: center;"><slot name="nom"></slot></v-card-title>
         <v-card-text>
             <div>Type d'astre: <slot name="type"></slot></div>
-            <div>Nombre de satelite: <slot name="nombre"></slot></div>
+            <div>Distance du Soleil: <slot name="nombre"></slot></div>
         </v-card-text>
         <v-card-actions>
             <v-btn color="bg-deep-purple" :href="link">
