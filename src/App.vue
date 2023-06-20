@@ -1,9 +1,11 @@
 <template>
+
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/astres">Astres</router-link> |
+    <router-link to="/favorites">Favoris</router-link>
   </nav>
-  <router-view/>
+  <router-view :key="$route.fullPath" />
 </template>
 
 <style>
